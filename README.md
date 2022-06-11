@@ -50,3 +50,7 @@ netlify deploy
 # production deployment
 netlify deploy --prod
 ```
+
+# silence warnings
+
+git config core.autocrlf true
