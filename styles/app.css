@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "Lora";
+  src: url("/my-remix-app/public/fonts/Lora/static/Lora-Regular.ttf")
+    format("ttf");
+}

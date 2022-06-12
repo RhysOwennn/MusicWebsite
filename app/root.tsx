@@ -1,4 +1,4 @@
-import type { MetaFunction } from "@remix-run/node";
+import type { LinksFunction, MetaFunction } from "@remix-run/node";
 import {
   Links,
   LiveReload,
@@ -7,10 +7,10 @@ import {
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
-
+import styles from "../styles/app.css";
 export const meta: MetaFunction = () => ({
   charset: "utf-8",
-  title: "New Remix App",
+  title: "Sybersyn",
   viewport: "width=device-width,initial-scale=1",
 });
 
@@ -20,7 +20,6 @@ export default function App() {
       <head>
         <Meta />
         <Links />
-        <link href="../app/dist/output.css" rel="stylesheet" />
       </head>
       <body>
         <Outlet />
@@ -31,3 +30,5 @@ export default function App() {
     </html>
   );
 }
+
+export const links: LinksFunction = () => [{ rel: "stylesheet", href: styles }];
