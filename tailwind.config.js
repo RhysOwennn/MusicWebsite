@@ -9,6 +9,7 @@ module.exports = {
         tertiary: "#4B5556",
         quaternary: "#6C6C6F",
       },
+
       backgroundImage: {
         hero: "url('../SybersynWebsite/public/images/hero.jpg')",
         hero2:
@@ -16,5 +17,5 @@ module.exports = {
       },
     },
   },
-  plugins: [require("tailwindcss"), require("daisyui")],
+  plugins: [require("daisyui")],
 };

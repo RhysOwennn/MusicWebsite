@@ -1,4 +1,5 @@
 import type { LinksFunction, MetaFunction } from "@remix-run/node";
+import { NavBar } from "../app/components/NavBar";
 import {
   Links,
   LiveReload,
@@ -22,6 +23,7 @@ export default function App() {
         <Links />
       </head>
       <body>
+        <NavBar title={""} link={""} src={""} />
         <Outlet />
         <ScrollRestoration />
         <Scripts />
