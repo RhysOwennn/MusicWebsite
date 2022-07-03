@@ -23,7 +23,6 @@ export default function App() {
         <Links />
       </head>
       <body>
-        <NavBar title={""} link={""} src={""} />
         <Outlet />
         <ScrollRestoration />
         <Scripts />
