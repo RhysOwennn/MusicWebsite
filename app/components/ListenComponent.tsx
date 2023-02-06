@@ -3,8 +3,7 @@ import { previewList } from "~/components/SongPreviews";
 import { songType } from "~/types/types";
 import { Key } from "react";
 
-export default function ListenComponent() {
-  return (
+export const ListenComponent = () => (
     <>
       <div className="hero">
         <div className="flex flex-row">
@@ -17,6 +16,4 @@ export default function ListenComponent() {
           ))}
         </div>
       </div>
-    </>
-  );
-}
+    </>)

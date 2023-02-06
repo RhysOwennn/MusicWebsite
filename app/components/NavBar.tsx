@@ -73,7 +73,9 @@ export const NavBar = () => (
       </ul>
     </div>
     <div className="navbar-end">
+      <Link to={"/subscribe"}>
       <a className="btn">Subscribe</a>
+      </Link>
     </div>
   </div>
 );
