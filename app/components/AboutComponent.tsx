@@ -10,10 +10,10 @@ export const AboutComponent = () => (
         <div>
           <h1 className="text-5xl font-bold">Sybersyn</h1>
           <p className="py-6">
-            Sybersyn started as a vague idea many some years ago, I'd been
+            Sybersyn started as a vague idea some years ago, I'd been
             making music for years.
           </p>
-          <button className="btn btn-primary">Get Started</button>
+          <button className="btn btn-primary">Subscribe</button>
         </div>
       </div>
     </div>
