@@ -1,5 +1,4 @@
 import type { LinksFunction, MetaFunction } from "@remix-run/node";
-import { NavBar } from "../app/components/NavBar";
 import {
   Links,
   LiveReload,
