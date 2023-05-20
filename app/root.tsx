@@ -7,7 +7,7 @@ import {
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
-import styles from "./styles/app.css";
+import styles from "./styles/tailwind.css";
 export const meta: MetaFunction = () => ({
   charset: "utf-8",
   title: "Sybersyn",
