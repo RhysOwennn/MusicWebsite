@@ -74,7 +74,7 @@ export const NavBar = () => (
     </div>
     <div className="navbar-end">
       <Link to={"/subscribe"}>
-      <a className="btn">Subscribe</a>
+        <a className="btn">Subscribe</a>
       </Link>
     </div>
   </div>

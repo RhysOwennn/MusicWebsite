@@ -1,6 +1,6 @@
-import { songType } from "~/types/types";
+import { SongType } from "~/types/types";
 
-export const previewList: songType[] = [
+export const previewList: SongType[] = [
   {
     title: "I don't want to know",
     link: "https://sybersyn.bandcamp.com/track/i-dont-want-to-know",
