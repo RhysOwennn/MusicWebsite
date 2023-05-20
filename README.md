@@ -32,6 +32,12 @@ netlify init
 
 The Netlify CLI starts your app in development mode, rebuilding assets on file changes.
 
+### Install Dependencies
+
+```sh
+npm install
+```
+
 ```sh
 npm run dev
 ```
