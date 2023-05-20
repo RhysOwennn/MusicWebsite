@@ -2,7 +2,7 @@
   "private": true,
   "sideEffects": false,
   "scripts": {
-    "build": "remix build:css && remix build",
+    "build": "remix build",
     "dev": "concurrently \"npm run dev:css\" \"cross-env NODE_ENV=development netlify dev\"",
     "build:css": "tailwindcss -m -i ./styles/app.css -o app/styles/tailwind.css",
     "dev:css": "npm run generate:css -- --watch",
