@@ -10,7 +10,12 @@ export const AboutComponent = (
         <div>
           <h1 className="text-5xl font-bold">Sybersyn</h1>
           <p className="py-6">
-            Sybersyn started as a vague idea some years ago..
+            An artist from Cape Town, South Africa. Finding value in the unknown
+            and forgotten. Inspired by sounds from all over the world, Sybersyn
+            evokes an image of a network of digital roots beneath an ancient and
+            mythical tree - often in seeking the unknown, in pushing up the
+            skies we are drawn into the past. And the more we venture into the
+            past, the more we discover portents of the future.
           </p>
 
           <Link to={"/subscribe"}>
