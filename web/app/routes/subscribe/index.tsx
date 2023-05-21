@@ -1,6 +1,5 @@
 import { HeroWrapper } from "~/components/HeroWrapper";
 import { SubscribeForm } from "~/components/SubscribeForm";
-import heroImage from "../../../public/images/BG Images/heronocircle.png";
 import { ActionFunction } from "@remix-run/node";
 import { client, imageUrlForSource } from "~/lib/sanity";
 import { useLoaderData } from "@remix-run/react";
