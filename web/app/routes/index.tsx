@@ -11,6 +11,7 @@ export const loader = async () => {
   const homeInfoProcessed = homeInfo[0];
   const imageUrl = imageUrlForSource(homeInfoProcessed.image)
     ?.crop("focalpoint")
+    .fit("fillmax")
     .dpr(1)
     .format("webp")
     .url();

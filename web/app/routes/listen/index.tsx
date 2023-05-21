@@ -22,13 +22,11 @@ export default function Index() {
   const { processedListenInfo, imageUrl } = useLoaderData();
 
   return (
-    <>
-      <HeroWrapper
-        img={imageUrl}
-        component={
-          <ListenComponent songList={processedListenInfo.bandcampLinks} />
-        }
-      />
-    </>
+    <HeroWrapper
+      img={imageUrl}
+      component={
+        <ListenComponent songList={processedListenInfo.bandcampLinks} />
+      }
+    />
   );
 }

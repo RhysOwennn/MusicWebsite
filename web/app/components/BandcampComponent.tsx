@@ -7,7 +7,7 @@ export const BandcampComponent = ({
   link: string;
   src: string;
 }) => (
-  <div className="p-8">
+  <div className="xl:p-8 md:p-3">
     <iframe
       style={{ border: "0", width: "350px", height: "442px" }}
       src={src}
