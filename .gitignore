@@ -1,8 +1,2 @@
-node_modules
-
-/.cache
-/public/build
-/.netlify
-.env
-/app/styles/
-/package-lock.json
+# Local Netlify folder
+.netlify
