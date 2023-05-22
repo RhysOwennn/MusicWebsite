@@ -4,9 +4,12 @@ export const AboutComponent = (
   { aboutInfo, portraitImage }: { aboutInfo: string; portraitImage: string } // TODO use about info for content
 ) => (
   <div>
-    <div className="hero mt-36">
+    <div className="hero lg:mt-36">
       <div className="hero-content flex-col lg:flex-row-reverse">
-        <img src={portraitImage} className=" shadow-2xl w-2/4 rounded-3xl" />
+        <img
+          src={portraitImage}
+          className=" shadow-2xl w-2/4 lg:rounded-3xl invisible lg:visible md:visible"
+        />
         <div>
           <h1 className="text-5xl font-bold">Sybersyn</h1>
           <p className="py-6">
