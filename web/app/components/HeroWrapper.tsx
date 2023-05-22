@@ -17,12 +17,6 @@ export const HeroWrapper = ({
         <NavBar />
         {component}
       </div>
-      <div className="hero-content text-primary">
-        <div className="max-w-md">
-          <h1 className="mb-5 text-5xl font-bold text-primary"></h1>
-          <p className="mb-5"></p>
-        </div>
-      </div>
       <Footer />
     </div>
   </>
