@@ -1,7 +1,7 @@
 import { Link } from "@remix-run/react";
 
 export const NavBar = () => (
-  <div className="navbar bg-base-100 opacity-80">
+  <div className="navbar bg-base-100 opacity-80 z-10">
     <div className="navbar-start">
       <div className="dropdown">
         <label tabIndex={0} className="btn btn-ghost lg:hidden">
