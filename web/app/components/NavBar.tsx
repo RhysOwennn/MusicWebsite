@@ -20,7 +20,11 @@ export const NavBar = ({ navInfo }: { navInfo: NavLink[] }) => {
           >
             {navInfo?.map((navItem: NavLink, key) => (
               <li
-                className="hover:text-special active:bg-syprimaryHover focus:bg-syprimaryHover"
+                className={
+                  location.pathname === navItem.url
+                    ? "text-special underline underline-offset-4"
+                    : "hover:text-special active:bg-syprimaryHover focus:bg-syprimaryHover"
+                }
                 key={key}
               >
                 <Link to={navItem.url}>
@@ -56,7 +60,15 @@ export const NavBar = ({ navInfo }: { navInfo: NavLink[] }) => {
       </div>
       <div className="navbar-end">
         <Link to={"/subscribe"}>
-          <a className="btn btn-sytertiary hover:text-special">Subscribe</a>
+          <a
+            className={
+              location.pathname === "/subscribe"
+                ? " btn btn-sytertiary text-special"
+                : "btn btn-sytertiary hover:text-special active:bg-syprimaryHover focus:bg-syprimaryHover"
+            }
+          >
+            Subscribe
+          </a>
         </Link>
       </div>
     </div>
