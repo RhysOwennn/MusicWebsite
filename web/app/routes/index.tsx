@@ -3,6 +3,7 @@ import { HeroWrapper } from "../components/HeroWrapper";
 import { client, imageUrlForSource } from "~/lib/sanity";
 import { useLoaderData } from "@remix-run/react";
 import { homepage } from "~/types/types";
+import { NavBar } from "~/components/NavBar";
 
 export const loader = async () => {
   const query = `*[_type == "homepage"]`;

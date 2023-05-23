@@ -14,10 +14,10 @@ export const HeroWrapper = ({
       style={{ backgroundImage: `url(${img})` }}
     >
       <div className="hero-overlay bg-opacity-60">
-        <NavBar />
+        {/* <NavBar /> */}
         {component}
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   </>
 );

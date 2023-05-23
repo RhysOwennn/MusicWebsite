@@ -21,7 +21,7 @@ export default defineType({
     defineField({
       name: 'subscribe',
       title: 'Subscribe',
-      type: 'string',
+      type: 'blockContent',
     }),
   ],
   preview: {

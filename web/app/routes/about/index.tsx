@@ -20,7 +20,11 @@ export const loader = async () => {
     .format("webp")
     .url();
 
-  return { aboutInfo: aboutInfoProcessed, backgroundImage, portraitImage };
+  return {
+    aboutInfo: aboutInfoProcessed.about,
+    backgroundImage,
+    portraitImage,
+  };
 };
 export default function Index() {
   const { aboutInfo, backgroundImage, portraitImage } = useLoaderData();
@@ -29,7 +33,7 @@ export default function Index() {
     <>
       <HeroWrapper
         component={
-          <AboutComponent aboutInfo={""} portraitImage={portraitImage} />
+          <AboutComponent aboutInfo={aboutInfo} portraitImage={portraitImage} />
         }
         img={backgroundImage}
       />
