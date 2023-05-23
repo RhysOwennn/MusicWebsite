@@ -4,7 +4,7 @@ import { Key } from "react";
 
 export const ListenComponent = ({ songList }: { songList: SongType[] }) => (
   <>
-    <div className="hero mt-24">
+    <div className="hero mt-52 mb-24">
       <div className="grid xl:grid-flow-col lg:grid-cols-2">
         {songList.map((song: SongType, index: Key) => (
           <BandcampComponent

@@ -25,3 +25,10 @@
   src: url("/my-remix-app/public/fonts/Lora/static/Lora-Regular.ttf")
     format("ttf");
 }
+
+@layer components {
+  .menu a {
+    @apply active:bg-syprimaryHover
+  }
+  
+}

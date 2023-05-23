@@ -1,10 +1,11 @@
 import { Form, useActionData } from "@remix-run/react";
 import { AlertComponent } from "./AlertComponent";
 import { useEffect, useState } from "react";
+import { PortableText } from "@portabletext/react";
 
 interface SubscribeInfo {
   title: string;
-  subscribe: string;
+  subscribe: any;
 }
 
 export const SubscribeForm = ({
@@ -28,12 +29,14 @@ export const SubscribeForm = ({
   }, [actionData]);
 
   return (
-    <div className="hero lg:mt-36 md:mt-24 mt-12">
+    <div className="hero mt-52">
       {state !== "success" && (
         <div className="hero-content flex-col lg:flex-row-reverse">
           <div className="text-center lg:text-left lg:p-12">
             <h1 className="text-5xl font-bold">{subscribeInfo.title}</h1>
-            <p className="py-6">{subscribeInfo.subscribe}</p>
+            <p className="py-6">
+              <PortableText value={subscribeInfo.subscribe} />
+            </p>
           </div>
           <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
             <Form
@@ -65,7 +68,10 @@ export const SubscribeForm = ({
                 />
               </fieldset>
               <div className="form-control mt-6">
-                <button className="btn btn-primary" disabled={isSubmitting}>
+                <button
+                  className="btn active:text-syprimaryHover"
+                  disabled={isSubmitting}
+                >
                   Subscribe
                 </button>
                 {isSubmitting && state !== "error" ? (

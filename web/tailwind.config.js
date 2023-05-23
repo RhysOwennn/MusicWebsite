@@ -3,11 +3,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#C1C7C9",
-        primaryHover: "#BCC2C4",
-        secondry: "#606B6F",
-        tertiary: "#4B5556",
-        quaternary: "#6C6C6F",
+        syprimaryHover: "#d3b094",
+        sysecondary: "#919191",
+        sytertiary: "#fffff0",
+        syquaternary: "#6C6C6F",
+        special: "#d3b094",
       },
     },
   },
